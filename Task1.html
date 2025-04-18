@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple Webpage </title>
+    <link rel="stylesheet" href="Task1.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <nav class="navbar">
+        <div class="logo"> Indian Heritages </div>
+        <ul class="nav-links">
+            <li><a href="#home" onclick="homeAlert()">Home</a></li>
+            <li><a href="#culture">Culture</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <!-- slide 1 -->
+            <div class="carousel-slide slide1 fade">
+                <div class="text-overlay">
+                    <h1> Taj Mahal - A Timeless Wonder </h1>
+                    <p> The Taj Mahal in Agra is a breathtaking white marble monument built by Emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal. A UNESCO World Heritage Site and one of the New Seven Wonders of the World, it's a must-visit for its stunning architecture and romantic legacy. </p>
+
+                </div>
+            </div>
+
+            <!-- slide 2 -->
+            <div class="carousel-slide slide2 fade">
+                <div class="text-overlay">
+                    <h1> Golden Temple - The Spiritual Heart of Punjab </h1>
+                    <p>The Golden Temple, also known as Sri Harmandir Sahib, is the holiest shrine of Sikhism, located in Amritsar, Punjab. Famous for its shimmering golden dome and serene surroundings, it welcomes visitors from all faiths with its message of peace and unity. The temple also houses the world's largest free community kitchen, serving thousands daily. </p>
+                </div>
+            </div>
+
+            <!-- slide 3 -->
+            <div class="carousel-slide slide3 fade">
+                <div class="text-overlay">
+                    <h1> Red Fort - The Pride of Delhi </h1>
+                    <p>The Red Fort is a magnificent 17th-century fortress in Old Delhi, built by Mughal Emperor Shah Jahan. Constructed with striking red sandstone, it served as the main residence of the Mughal emperors for nearly 200 years. Today, it's a symbol of India's rich history and the site where the Prime Minister hoists the national flag every Independence Day.</p>
+                </div>
+            </div>
+
+            <!-- slide 4 -->
+            <div class="carousel-slide slide4 fade">
+                <div class="text-overlay">
+                    <h1> Hawa Mahal - The Palace of Winds </h1>
+                    <p>Located in the heart of Jaipur, the Hawa Mahal is a stunning pink sandstone palace built in 1799 by Maharaja Sawai Pratap Singh. Famous for its 953 intricately carved windows, it allowed royal women to observe street festivals while remaining unseen. Its unique honeycomb design and breezy architecture make it a must-visit gem of Rajasthan. </p>
+                </div>
+            </div>
+
+            <!-- slide 5 -->
+            <div class="carousel-slide slide5 fade">
+                <div class="text-overlay">
+                    <h1> Gateway of India - Mumbai's Majestic Arch </h1>
+                    <p> The Gateway of India is a grand stone arch overlooking the Arabian Sea, built in 1924 to commemorate the visit of King George V and Queen Mary to Mumbai. A fusion of Indo-Saracenic and Islamic architecture, it's one of the city's most iconic landmarks and a popular starting point for boat rides to Elephanta Caves. </p>
+                </div>
+            </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+    </section>
+    <!-- Carousel End -->
+
+    
+    <!-- JavaScript start -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function showSlides(n) {
+            const slides = document.getElementsByClassName("carousel-slide");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <!-- JavaScript End -->
+
+    <!-- JavaScript For Alert Start -->
+    <script>
+        function homeAlert() {
+          alert("Welcome to the Home section!");
+        }
+      </script>
+    <!-- JavaScript For Alert Start -->
+      
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Indian Heritages. All rights reserved.</p>
+            <p>Designed with ❤️ to celebrate India's rich cultural legacy.</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+  
+</body>
+</html>
+          
