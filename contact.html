@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Indian Heritages</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+    <!-- Contact form Start -->
+  <div class="contact-container">
+    <h1>Contact Us - Indian Heritages</h1>
+    <form id="heritageContactForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" />
+
+      <label for="subject">Purpose of Contact:</label>
+      <select id="subject" name="subject" required>
+        <option value="">--Select--</option>
+        <option value="inquiry">General Inquiry</option>
+        <option value="tourist">Tourist Information</option>
+        <option value="issue">Report an Issue</option>
+        <option value="suggestion">Suggest a Heritage Site</option>
+        <option value="media">Partnership / Media</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <label>Preferred Contact Method:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="contactMethod" value="email" checked /> Email</label>
+        <label><input type="radio" name="contactMethod" value="phone" /> Phone</label>
+        <label><input type="radio" name="contactMethod" value="whatsapp" /> WhatsApp</label>
+      </div>
+
+      
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" required /> I consent to being contacted by the Indian Heritages team.</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <!-- Contact form End -->
+  <script src="contact.js"></script>
+</body>
+</html>

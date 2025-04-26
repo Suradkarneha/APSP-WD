@@ -1,0 +1,75 @@
+/* Start Contact Form */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: calc(100vh);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-container {
+    max-width: 500px;
+    margin: 3rem auto 3rem auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 128, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    color: green;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="file"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .radio-group,
+  .checkbox-group {
+    margin-top: 0.5rem;
+  }
+  
+  .radio-group label,
+  .checkbox-group label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: normal;
+  }
+  
+  button {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: green;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: green;
+  }
+  /* End Contact Form */
+
+  

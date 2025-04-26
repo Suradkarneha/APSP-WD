@@ -1,0 +1,62 @@
+/* Start Image Gallery */
+.gallery-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0 0 1rem 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-container h1 {
+  color: green;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  text-align: center;
+  width: 300px;
+  position: relative; /* important for overlay */
+  overflow: hidden;    /* hide the overflow when image scales */
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* smooth zoom */
+}
+
+.gallery-item p {
+  position: absolute;
+  bottom: -50px; /* start hidden below */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: bottom 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover effects */
+.gallery-item:hover img {
+  transform: scale(1.1); /* zoom the image */
+}
+
+
+.gallery-item:hover p {
+  bottom: 20px; /* move up */
+  opacity: 1;
+}
+/* End Image Gallery */
+
+
