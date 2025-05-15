@@ -11,7 +11,7 @@
 }
 
 .navbar .logo {
-    color:white;
+    color:green;
     font-size: 24px;
     font-weight: bold;
 
@@ -26,14 +26,14 @@
 }
 
 .nav-links li a {
-    color: white;
+    color:white;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-    color:black;
+    color:green;
     background-color: white;
     padding: 5px;
 }
@@ -42,7 +42,7 @@
 /* Start coursal */
 .carousel-section {
     width: 100%;
-    height: calc(80vh);
+    height: calc(100vh);
     overflow: hidden;
     position: relative;
 }
@@ -50,13 +50,13 @@
 .carousel-container {
     position: relative;
     width: 100%;
-    height: calc(80vh);
+    height: calc(100vh);
 }
 
 .carousel-slide {
     display: none;
     width: 100%;
-    height: calc(80vh);
+    height: calc(100vh);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,11 +129,202 @@
 }
 /* End coursal */
 
+/* start Home section*/
+.home-section {
+    padding: 30px 20px;
+    background-color: rgb(225, 225, 225);
+    text-align: center;
+    
+}
+
+.home-section h2 {
+    font-size: 2.5em;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: black;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-box {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-box h3 {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.region-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.region-card {
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.region-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.region-card h3 {
+    margin: 15px;
+    color: green;
+}
+
+.region-card p {
+    margin: 0 15px 20px;
+    font-size: 0.95em;
+    color: white;
+}
+
+.region-card:hover {
+    transform: translateY(-5px);
+}
+
+/* End Home section */
+
+/* Start Image Gallery */
+.gallery-container {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 0 1rem 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-container h1 {
+  color: green;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.gallery-item {
+  text-align: center;
+  width: 300px;
+  position: relative; /* important for overlay */
+  overflow: hidden;    /* hide the overflow when image scales */
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* smooth zoom */
+}
+
+.gallery-item p {
+  position: absolute;
+  bottom: -50px; /* start hidden below */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  transition: bottom 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover effects */
+.gallery-item:hover img {
+  transform: scale(1.1); /* zoom the image */
+}
+
+
+.gallery-item:hover p {
+  bottom: 20px; /* move up */
+  opacity: 1;
+}
+/* End Image Gallery */
+
+
+/* Start About section */
+.about-section {
+    padding: 30px 20px;
+    margin: auto;
+    background-color: rgba(225, 225, 225, 0.8);
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.about-image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.about-image-text img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-image-text blockquote {
+    font-style: italic;
+    text-align: center;
+    color: green;
+    font-size: 1.2rem;
+}
+/* End About section */
+
+
 
 /* Footer Start */
 .footer {
     background-color: #222;
-    color: #f0f0f0;
+    color: white;
     text-align: center;
     padding: 10px 10px;
     margin-top: 0px;
